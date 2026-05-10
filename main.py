@@ -145,3 +145,37 @@ except Exception as e:
     logging.error(str(e))
 
     print("Error general:", e)
+# Cliente inválido
+try:
+
+    cliente_error = Cliente("", "correo")
+
+except Exception as e:
+
+    logging.error(str(e))
+
+    print("Error detectado:", e)
+
+
+# Servicio inválido
+try:
+
+    servicio_error = ReservaSala(-2)
+
+except Exception as e:
+
+    logging.error(str(e))
+
+    print("Error detectado:", e)
+
+
+# Correo inválido
+try:
+
+    cliente_error2 = Cliente("Pedro", "pedrogmail.com")
+
+except Exception as e:
+
+    logging.error(str(e))
+
+    print("Error detectado:", e)
